@@ -1,0 +1,17 @@
+# robots.txt for Uttarakhand Cab 24/7
+# Website: https://uttarakhandcab.in
+
+User-agent: *
+Disallow: /admin/
+Disallow: /test/
+Disallow: /private/
+Disallow: /tmp/
+Allow: /
+
+# Allow important assets for Google rendering
+Allow: /*.js$
+Allow: /*.css$
+Allow: /images/
+
+# Main Sitemap
+Sitemap: https://uttarakhandcab.in/sitemap.xml
