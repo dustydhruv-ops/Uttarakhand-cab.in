@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttarakhand Taxi Service | Dehradun Taxi Booking | Cab Service 24/7 🚖</title>
+    <meta name="description" content="Book reliable Uttarakhand Taxi Service for Char Dham Yatra Taxi, Nainital Mussoorie Taxi Package, Rishikesh Haridwar Cab Booking. Best Uttarakhand Tour Packages with Cab 24/7.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#64748b'
+                    },
+                    fontFamily: {
+                        'heading': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-40 transition-colors duration-300">
+        <nav class="nav container mx-auto px-4 py-4">
+            <div class="nav__brand">
+                <h1 class="nav__title text-2xl font-bold text-blue-600">🚖 Uttarakhand Cab 24/7</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav__menu hidden md:flex items-center space-x-8">
+                <li class="nav__item"><a href="#home" class="nav__link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Services</a></li>
+                <li class="nav__item"><a href="#packages" class="nav__link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Packages</a></li>
+                <li class="nav__item"><a href="reviews.html" class="nav__link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Reviews</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Contact</a></li>
+                <li class="nav__item">
+                    <button id="darkToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                        <span>🌙</span>
+                    </button>
+                </li>
+                <li class="nav__item">
+                    <button id="openModalBtnDesktop" class="btn btn--primary btn-ripple">Book Now</button>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="nav__toggle md:hidden">
+                <div class="hamburger-line w-6 h-0.5 bg-gray-700 dark:bg-gray-300 transition-all duration-300"></div>
+                <div class="hamburger-line w-6 h-0.5 bg-gray-700 dark:bg-gray-300 transition-all duration-300"></div>
+                <div class="hamburger-line w-6 h-0.5 bg-gray-700 dark:bg-gray-300 transition-all duration-300"></div>
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 hidden transition-colors duration-300">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="#home" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Home</a></li>
+                    <li><a href="#services" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Services</a></li>
+                    <li><a href="#packages" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Packages</a></li>
+                    <li><a href="reviews.html" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Reviews</a></li>
+                    <li><a href="#contact" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Contact</a></li>
+                    <li>
+                        <button id="darkToggleMobile" class="flex items-center space-x-2 p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                            <span>🌙</span>
+                            <span class="text-gray-700 dark:text-gray-300">Dark Mode</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="openModalBtnMobile" class="btn btn--primary btn-ripple w-full mt-4">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="flex-1">
+        <!-- Hero Section -->
+        <section id="home" class="hero bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 animate-fade-in">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="hero__title text-4xl md:text-6xl font-bold font-heading mb-6 animate-fade-in-up">
+                    Uttarakhand Taxi Service
+                </h1>
+                <p class="hero__subtitle text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up animate-delay-200">
+                    Your trusted travel partner in the beautiful state of Uttarakhand
+                </p>
+                
+                <!-- Trust Indicators -->
+                <div class="trust-card p-6 rounded-xl mb-8 inline-block animate-fade-in-up animate-delay-300">
+                    <div class="text-4xl font-bold text-white mb-2">4.9/5</div>
+                    <div class="flex justify-center text-yellow-400 text-xl mb-2">★★★★★</div>
+                    <div class="text-lg opacity-90 mb-3">Based on 7 genuine customer reviews</div>
+                    <div class="flex items-center justify-center space-x-6 text-sm opacity-75">
+                        <div class="flex items-center">
+                            <span class="mr-2">🕐</span>
+                            <span>24×7 Available</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="mr-2">🧼</span>
+                            <span>Sanitized Cabs</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="mr-2">👨‍💼</span>
+                            <span>Professional Drivers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__actions animate-fade-in-up animate-delay-400">
+                    <button id="openModalBtnHero" class="btn btn--primary btn-ripple text-lg px-8 py-4 mr-4 mb-4">
+                        Book Your Ride
+                    </button>
+                    <a href="reviews.html" class="btn btn--secondary text-lg px-8 py-4 mb-4">
+                        ⭐ Read All Reviews
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="section__title text-3xl md:text-4xl font-bold font-heading text-center mb-12 text-gray-900 dark:text-white">
+                    Our Services
+                </h2>
+                <p class="text-center text-lg text-gray-600 dark:text-gray-400 mb-12">
+                    Your one-stop solution for all travel needs in the Devbhoomi.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="service-card card bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up">
+                        <div class="card__icon text-5xl mb-4">🚗</div>
+                        <h3 class="card__title text-xl font-semibold mb-3 text-gray-900 dark:text-white">Local & Outstation Rides</h3>
+                        <p class="card__description text-gray-600 dark:text-gray-400">Book a cab anytime within Uttarakhand or for outstation travel.</p>
+                    </div>
+                    
+                    <div class="service-card card bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up animate-delay-100">
+                        <div class="card__icon text-5xl mb-4">✈️</div>
+                        <h3 class="card__title text-xl font-semibold mb-3 text-gray-900 dark:text-white">Airport & Station Transfers</h3>
+                        <p class="card__description text-gray-600 dark:text-gray-400">On-time pickup & drop services for Jolly Grant Airport and major railway stations.</p>
+                    </div>
+                    
+                    <div class="service-card card bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up animate-delay-200">
+                        <div class="card__icon text-5xl mb-4">🙏</div>
+                        <h3 class="card__title text-xl font-semibold mb-3 text-gray-900 dark:text-white">Char Dham Yatra Packages</h3>
+                        <p class="card__description text-gray-600 dark:text-gray-400">Comfortable, safe, and spiritual journeys with our customized packages.</p>
+                    </div>
+                    
+                    <div class="service-card card bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up animate-delay-300">
+                        <div class="card__icon text-5xl mb-4">💼</div>
+                        <h3 class="card__title text-xl font-semibold mb-3 text-gray-900 dark:text-white">Corporate & Luxury Travel</h3>
+                        <p class="card__description text-gray-600 dark:text-gray-400">Professional fleet for business clients, events, and VIP transfers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="section py-16 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="section__title text-3xl md:text-4xl font-bold font-heading text-center mb-12 text-gray-900 dark:text-white">
+                    Uttarakhand Tour Packages with Cab
+                </h2>
+                <p class="text-center text-lg text-gray-600 dark:text-gray-400 mb-12">
+                    Explore the beauty of Devbhoomi with our specially curated tour packages
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-left">
+                        <div class="text-4xl mb-4">🏔️</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Mussoorie & Rishikesh</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Queen of Hills + Yoga Capital combination tour</p>
+                        <button onclick="openBookingForm('3 Days - Mussoorie & Rishikesh')" class="btn btn--primary w-full">Book Now</button>
+                    </div>
+                    
+                    <div class="card bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-left animate-delay-100">
+                        <div class="text-4xl mb-4">🌊</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Nainital & Jim Corbett</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Lake city + National park adventure tour</p>
+                        <button onclick="openBookingForm('4 Days - Nainital & Jim Corbett')" class="btn btn--primary w-full">Book Now</button>
+                    </div>
+                    
+                    <div class="card bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-left animate-delay-200">
+                        <div class="text-4xl mb-4">⛷️</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Auli & Chopta</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Skiing destination + Mini Switzerland tour</p>
+                        <button onclick="openBookingForm('5 Days - Auli & Chopta')" class="btn btn--primary w-full">Book Now</button>
+                    </div>
+                    
+                    <div class="card bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-left animate-delay-300">
+                        <div class="text-4xl mb-4">🕉️</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Char Dham Mini Tour</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Sacred pilgrimage to holy shrines</p>
+                        <button onclick="openBookingForm('7 Days - Char Dham Mini Tour')" class="btn btn--primary w-full">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour Booking Form Section -->
+        <section id="booking" class="section py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <div class="max-w-2xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 text-gray-900 dark:text-white">✨ Book Your Uttarakhand Tour ✨</h2>
+                        <p class="text-lg text-gray-600 dark:text-gray-400">"Plan your trip in just 1 minute – our team will call you back instantly!"</p>
+                    </div>
+                    
+                    <form id="tourBookingForm" class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="form__group">
+                                <label for="customerName" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name *</label>
+                                <input type="text" id="customerName" name="customerName" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="customerPhone" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone Number *</label>
+                                <input type="tel" id="customerPhone" name="customerPhone" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="pickupLocation" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Pickup Location *</label>
+                                <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Enter pickup city/address" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="startDate" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Start Date *</label>
+                                <input type="date" id="startDate" name="startDate" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="tourDuration" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Duration *</label>
+                                <select id="tourDuration" name="tourDuration" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                                    <option value="">Select Duration</option>
+                                    <option value="1 Day">1 Day</option>
+                                    <option value="2 Days">2 Days</option>
+                                    <option value="3 Days">3 Days</option>
+                                    <option value="4 Days">4 Days</option>
+                                    <option value="5 Days">5 Days</option>
+                                    <option value="6 Days">6 Days</option>
+                                    <option value="7 Days">7 Days</option>
+                                    <option value="More than 7 Days">More than 7 Days</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="destination" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Destination *</label>
+                                <select id="destination" name="destination" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                                    <option value="">Select Destination</option>
+                                    <option value="Mussoorie & Rishikesh">Mussoorie & Rishikesh</option>
+                                    <option value="Nainital & Jim Corbett">Nainital & Jim Corbett</option>
+                                    <option value="Auli & Chopta">Auli & Chopta</option>
+                                    <option value="Char Dham Mini Tour">Char Dham Mini Tour</option>
+                                    <option value="Dehradun Local">Dehradun Local</option>
+                                    <option value="Haridwar & Rishikesh">Haridwar & Rishikesh</option>
+                                    <option value="Custom Tour">Custom Tour</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form__group mt-6">
+                            <label for="carPreference" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Car Preference</label>
+                            <select id="carPreference" name="carPreference" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                                <option value="">Any Car Type</option>
+                                <option value="Hatchback (4 seater)">Hatchback (4 seater)</option>
+                                <option value="Sedan (4+1 seater)">Sedan (4+1 seater)</option>
+                                <option value="SUV (6+1 seater)">SUV (6+1 seater)</option>
+                                <option value="Tempo Traveller (12 seater)">Tempo Traveller (12 seater)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group mt-6">
+                            <label for="additionalNotes" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Additional Notes</label>
+                            <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any special requirements or preferences..." class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white resize-vertical"></textarea>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <button type="button" id="whatsappBookBtn" class="btn btn--primary w-full py-4 text-lg font-semibold btn-ripple">
+                                📱 Book via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section py-16 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="section__title text-3xl md:text-4xl font-bold font-heading text-center mb-12 text-gray-900 dark:text-white">
+                    What Our Customers Say
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg animate-fade-in-up">
+                        <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                            "Excellent service! Booked a cab for our family trip to Mussoorie and Rishikesh. The driver was very professional, punctual, and the vehicle was clean and comfortable."
+                        </p>
+                        <h4 class="font-semibold text-gray-900 dark:text-white">– nikit mehta</h4>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg animate-fade-in-up animate-delay-100">
+                        <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                            "Outstanding cab service for our Char Dham Yatra! The driver was experienced in mountain driving and knew all the routes perfectly. Worth every penny!"
+                        </p>
+                        <h4 class="font-semibold text-gray-900 dark:text-white">– Manabendra Nath Ray</h4>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg animate-fade-in-up animate-delay-200">
+                        <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                            "Used for airport transfer and day trip to Haridwar. Service was prompt, professional, and affordable. Driver arrived exactly on time and was courteous throughout."
+                        </p>
+                        <h4 class="font-semibold text-gray-900 dark:text-white">– Arpit Khandelwal</h4>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="reviews.html" class="btn btn--primary btn-ripple text-lg px-8 py-3">
+                        Read All Customer Reviews
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4">
+                <h2 class="section__title text-3xl md:text-4xl font-bold font-heading text-center mb-12 text-gray-900 dark:text-white">
+                    Find & Contact Us
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Contact Info -->
+                    <div class="animate-fade-in-left">
+                        <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Business Details</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl">📍</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Address:</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Dehradun, Uttarakhand, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl">⏰</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Business Hours:</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Mon–Sun: 24×7 Open</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl">📞</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Phone:</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">
+                                        <a href="tel:+919675212169" class="hover:text-blue-600 transition-colors">+91 9675212169</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl">📱</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">WhatsApp:</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">
+                                        <a href="https://wa.me/919675212169" class="hover:text-blue-600 transition-colors">+91 9675212169</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Contact Form -->
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl animate-fade-in-right">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Quick Contact</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                                <input type="text" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone</label>
+                                <input type="tel" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                                <textarea rows="4" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white resize-vertical"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary w-full py-3 btn-ripple">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="mb-6">
+                    <h3 class="text-3xl font-bold text-white mb-2">🚖 Uttarakhand Cab 24/7</h3>
+                    <p class="text-gray-400">Your trusted travel partner in Devbhoomi</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center items-center space-x-8 mb-8">
+                    <div class="mb-4">
+                        <p class="text-sm">📞 <a href="tel:+919675212169" class="hover:text-white transition-colors">+91 9675212169</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm">📱 <a href="https://wa.me/919675212169" class="hover:text-white transition-colors">WhatsApp</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm">📍 Dehradun, Uttarakhand</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm">⏰ 24/7 Service</p>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-700 pt-6">
+                    <p class="footer__text text-sm">
+                        © <span id="currentYear">2024</span> Uttarakhand Cab 24/7. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div id="modalContent" class="bg-white dark:bg-gray-800 rounded-lg p-8 m-4 w-full max-w-md transform transition-all duration-300 opacity-0 scale-95">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Book Your Cab</h2>
+                <button id="closeModalBtn" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl">×</button>
+            </div>
+            
+            <form id="bookingForm" class="space-y-4">
+                <div class="form__group">
+                    <label for="customerName" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Name *</label>
+                    <input type="text" id="customerName" name="customerName" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                </div>
+                
+                <div class="form__group">
+                    <label for="phoneNumber" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Phone Number *</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                </div>
+                
+                <div class="form__group">
+                    <label for="serviceSelection" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Service Required *</label>
+                    <select id="serviceSelection" name="serviceSelection" required class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                        <option value="">Select Service</option>
+                        <option value="Local Ride">Local Ride</option>
+                        <option value="Outstation Trip">Outstation Trip</option>
+                        <option value="Airport Transfer">Airport Transfer</option>
+                        <option value="Char Dham Yatra">Char Dham Yatra</option>
+                        <option value="Corporate Travel">Corporate Travel</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div id="otherServiceDiv" class="form__group hidden">
+                    <label for="otherServiceText" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Please specify *</label>
+                    <input type="text" id="otherServiceText" name="otherServiceText" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="form__group">
+                        <label for="pickupDate" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Pickup Date</label>
+                        <input type="date" id="pickupDate" name="pickupDate" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="pickupTime" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Pickup Time</label>
+                        <input type="time" id="pickupTime" name="pickupTime" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                    </div>
+                </div>
+                
+                <div class="form__group">
+                    <label for="pickupLocation" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Pickup Location</label>
+                    <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Enter pickup address" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                </div>
+                
+                <div class="form__group">
+                    <label for="destination" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="Where would you like to go?" class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+                </div>
+                
+                <div class="form__group">
+                    <label for="address" class="form__label block text-sm font-medium text-gray-700 dark:text-gray-300">Additional Details</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Any special requirements or notes..." class="form__input w-full p-3 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white resize-vertical"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn--primary w-full py-3 px-6 text-lg font-semibold btn-ripple">
+                    Book via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
